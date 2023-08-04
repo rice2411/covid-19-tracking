@@ -1,4 +1,4 @@
-Live demo: https://lucky-paletas-ccb39b.netlify.app/
+Live demo: https://covid-19-tracking-rice.netlify.app/
 
 # Getting Started with Create React App
 
