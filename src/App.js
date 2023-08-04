@@ -18,7 +18,7 @@ const App = () => {
   const [report, setReport] = React.useState([]);
   const [date, setDate] = React.useState();
 
-  useEffect(async () => {
+  useEffect( () => {
     getCountries().then((res) => {
       const { data } = res;
       const countries = sortBy(data.country, "name");
