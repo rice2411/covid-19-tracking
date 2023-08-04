@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import moment from "moment";
-import { Button, ButtonGroup, TextField } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 
 const generateOptions = (data) => {
   return {
@@ -54,11 +54,10 @@ const generateOptions = (data) => {
 
 export default function LineChart({ data, setDate }) {
   const [options, setOptions] = useState({});
-  const [reportType, setReportType] = useState("all");
 
   useEffect(() => {
     setOptions(generateOptions(data));
-  }, [data, reportType]);
+  }, [data]);
 
   return (
     <>
